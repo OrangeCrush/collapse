@@ -6,7 +6,9 @@
 #
 #
 #  INSTALLATION:
-#  chmod +x collapse.rb
+#  git clone https://github.com/OrangeCrush/collapse.git
+#  mv collapse.rb /usr/bin/collapse
+#  chmod +x /usr/bin/collapse
 #
 #   
 #  USAGE: 
@@ -20,7 +22,8 @@
 #  Read wildcards and support multiple collapsing.
 #  Rescue on name collisions
 #  Implement File transactions
-#  Implement an undo stack
+#  Implement an undo stack(transactions as a precursor to this)
+#  Handle symlinks
 #############################################################
 
 require 'fileutils'
@@ -50,10 +53,7 @@ def collapse()
 end
 
 def usage()
-   puts "\nTool to recursively collapse a Directory. \n\
-copies (moves) all children files into to \n\
-the current directory \n\
-\n\
+   puts "Invalid arguments given; must provide a directory-\n\
 USAGE: \n\
 collapse [-D] [dir/to/collapse]  \n\
 \n\

@@ -1,4 +1,28 @@
 collapse
 ========
 
-A simple command line tool to gracefully collapse a directory structure
+Tool to recursively collapse a directory.
+copies (moves) all children files into to 
+the current directory 
+
+
+INSTALLATION:
+git clone https://github.com/OrangeCrush/collapse.git
+mv collapse.rb /usr/bin/collapse
+chmod +x /usr/bin/collapse
+
+
+USAGE: 
+collapse [-D] [dir/to/collapse]  
+
+
+FLAGS:
+-D , Destructive (Move files, remove empty dirs)
+
+TODO:
+Read wildcards and support multiple collapsing.
+Rescue on name collisions
+Implement File transactions
+Implement an undo stack(transactions as a precursor to this)
+Handle symlinks
+
