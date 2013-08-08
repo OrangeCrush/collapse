@@ -4,8 +4,8 @@
 <hr />
 
 <p>
-Tool to recursively collapse a directory.<br>
-Copies (moves) all children files into to
+Tool to recursively collapse a directory.
+copies (moves) all children files into to 
 the current directory 
 </p>
 
@@ -13,6 +13,7 @@ the current directory
 <h2 id="toc_1.1">INSTALLATION:</h2>
 <pre>
 git clone https://github.com/OrangeCrush/collapse.git
+cd collapse
 mv collapse.rb /usr/bin/collapse
 chmod +x /usr/bin/collapse
 </pre>
